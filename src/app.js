@@ -7,42 +7,21 @@ import "./assets/img/4geeks.ico";
 
 window.onload = () => {
   //write your code here
-  document.querySelector("#button").addEventListener("click", () => {
-    document.querySelector("#domain").innerHTML = generateDomain();
-  });
-  //write your code here
-  document.querySelector("#domain").innerHTML = generateDomain();
-  console.log("hello World");
-};
-
-const generateDomain = () => {
-
-  var pronoun = ["the", "our", "your", "her"];
-  var adj = ["great", "big", "sweet", "hot", "ligth", "dirty"];
-  var noun = ["jogger", "racoon", "puppy", "chair", "camera", "fly", "popcorn"];
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big", "super"];
+  let noun = ["jogger", "racoon"];
   let suffix = [".com", ".ca", "nz", ".es", ".cl", ".ar"];
 
-  generateDomain[0]
-    for(let i = 0; i < generateDomain.length; i++){
-      console.log(generateDomain[i]); ["the", "our", "your", "her"];
-      for
-    }
-
-
-/*   var pronoun = ["the", "our", "your", "her"];
-  var adj = ["great", "big", "sweet", "hot", "ligth", "dirty"];
-  var noun = ["jogger", "racoon", "puppy", "chair", "camera", "fly", "popcorn"];
-  let suffix = [".com", ".ca", "nz", ".es", ".cl", ".ar"];
-
-  let domain = (pronoun, adj, noun) => {
-    for (var p = 0; i < pronoun.length; p++) {
-      for (var a = 0; i < adj.length; a++) {
-        for (var n = 0; i < noun.length; n++)
-          for (x = 0; i < suffix.length; x++) {
-            console.log(pronoun[p] + adj[a] + noun[n] + suffix[x]);
+  let pagesNames = () => {
+    for (let pronouns of pronoun) {
+      for (let adjs of adj) {
+        for (let nouns of noun) {
+          for (let suffixes of suffix) {
+            console.log(pronouns + adjs + nouns + suffixes);
           }
+        }
       }
     }
   };
 };
-domain(pronoun, adj, noun); */
+pagesNames();
